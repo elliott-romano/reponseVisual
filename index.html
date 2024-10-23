@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Load p5.js and its sound addon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+
+    <!-- Inline CSS to style the container and page -->
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(0deg, rgb(60,60,60), rgb(20,20,20));
+      }
+
+      #canvas-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;  /* Adjust width as needed */
+        height: 800px; /* Adjust height as needed */
+        background-color: white;  /* Optional container background */
+        border: 5px solid #333;  /* Optional border to simulate a frame */
+        box-shadow: 0 0 40px rgba(0,0,0,0.8);
+      }
+
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Container for the canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Include your sketch.js file -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
