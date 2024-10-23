@@ -36,8 +36,8 @@ function draw() {
   background(220);
 
   // Control frequency and amplitude based on time (sin and cos of frameCount)
-  let frequencyValue = 5 + sin(frameCount * 0.01) * 1;  // Varies smoothly between 0 and 10
-  let amplitudeValue = .1 + cos(frameCount * 0.02) * 0.6;  // Varies smoothly between 0.5 and 1.5
+  let frequencyValue = 5 + sin(frameCount * 0.001) * 1;  // Varies smoothly between 0 and 10
+  let amplitudeValue = 0.3 + cos(frameCount * 0.02) * 0.6;  // Varies smoothly between 0.5 and 1.5
   
   // Check if the defined time (textSpeed) has passed to update the text
   if (millis() - lastTime > textSpeed) {
